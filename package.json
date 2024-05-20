@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "compile": "tsc",
-    "test": "npx testcafe chrome tests/*.js"
+    "test": "npx testcafe chrome tests/*.js",
+    "clean": "node clean.js",
+    "test:all": "npm run compile && npm run test && npm run clean"
   },
   "keywords": [],
   "author": "",
